@@ -1,0 +1,23 @@
+#include<iostream>
+#include <cmath>
+using namespace std;
+int main()
+{
+	long x;
+	cin>>x;
+	while(x--)
+	{
+		long a,b;
+		cin>>a>>b;
+		long sum=a;
+		int flag=1;
+		while(sum != 0)
+		{
+			flag++;
+			sum = floor(sum/b);
+			
+		}
+		cout<<flag-1<<"\n";
+	}
+	return 0;
+}
