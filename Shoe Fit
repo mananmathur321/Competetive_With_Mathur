@@ -1,0 +1,22 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+	int T;
+	cin>>T;
+	while(T--)
+	{
+		int a,b,c,x;
+		cin>>a>>b>>c;
+		int sum = a+b+c;
+		if(sum==0 || sum==3)
+		{
+			cout<<"0\n";
+		}
+		else{
+			cout<<"1\n";
+		}
+		
+	}
+	return 0;
+}
