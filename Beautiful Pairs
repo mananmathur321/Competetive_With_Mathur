@@ -1,0 +1,36 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+	int T;
+	cin>>T;
+	while(T--)
+	{
+		int n,i,j;
+		cin>>n;
+		float arr[n],flag=0;
+		for(int i=0;i<n;i++)
+		{
+			cin>>arr[i];
+		}
+		for(i=0;i<n;i++)
+		{
+			for(j=0;j<n;j++)
+			{
+				if(arr[i]!=arr[j])
+				{
+					float sum1,sum2;
+					sum1 = (arr[i]-arr[j])/arr[i];
+					sum2 = (arr[i]-arr[j])/arr[j];
+					if(sum1<sum2)
+					{
+						flag++;
+					}
+				}
+			}
+			
+		}
+		cout<<flag<<"\n";
+	}
+	return 0;
+}
