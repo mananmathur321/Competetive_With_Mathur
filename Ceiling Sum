@@ -1,0 +1,30 @@
+#include<iostream>
+#include <cmath>
+using namespace std;
+int main()
+{
+	long x;
+	cin>>x;
+	while(x--)
+	{
+		long a,b,sum;
+		cin>>a>>b;
+		if(a==b)
+		{
+			cout<<"0\n";
+		}
+		if(a>b)
+		{
+			int x1 = b+1;
+			sum = ceil((b-x1)/2.0) + ceil((x1-a)/2.0);
+			cout<<sum<<"\n";
+		}
+		if(a<b)
+		{
+			int x1 = a+1;
+			sum = ceil((b-x1)/2.0) + ceil((x1-a)/2.0);
+			cout<<sum<<"\n";
+		}
+	}
+	return 0;
+}
