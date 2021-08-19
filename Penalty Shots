@@ -1,0 +1,41 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int t;
+    cin>>t;
+    while(t--)
+    {
+        int c1=0,c2=0;
+        int p[10];
+        for(int x=0;x<10;x++)
+        {
+            cin>>p[x];
+        }
+        for(int x=0;x<10;x++)
+        {
+            if(x%2!=0 && p[x]==1)
+            {
+                c1++;
+            }
+            if(x%2==0 && p[x]==1)
+            {
+                c2++;
+            }
+        }
+        if(c1>c2)
+        {
+            cout<<"2\n";
+        }
+        else if(c2>c1)
+        {
+            cout<<"1\n";
+        }
+        else
+        {
+            cout<<"0\n";
+        }
+    }
+	return 0;
+}
